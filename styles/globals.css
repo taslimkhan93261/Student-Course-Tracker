@@ -1,26 +1,128 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* fonts */
+
+.f-HelveticaNeueBlack {
+  font-family: "HelveticaNeueBlack", sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.f-HelveticaNeueItalic {
+  font-family: "HelveticaNeueItalic", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.f-HelveticaNeueLight {
+  font-family: "HelveticaNeueLight", sans-serif;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.f-HelveticaNeueLightItalic {
+  font-family: "HelveticaNeueLightItalic", sans-serif;
+}
+
+.f-HelveticaNeueMedium {
+  font-family: "HelveticaNeueMedium", sans-serif;
+}
+
+.f-HelveticaNeueMediumItalic {
+  font-family: "HelveticaNeueMediumItalic", sans-serif;
+}
+
+.f-HelveticaNeueRoman {
+  font-family: "HelveticaNeueRoman", sans-serif;
+}
+
+.f-HelveticaNeueUltraLight {
+  font-family: "HelveticaNeueUltraLight", sans-serif;
+}
+
+.f-HelveticaNeueUltraLightItalic {
+  font-family: "HelveticaNeueUltraLightItalic", sans-serif;
+}
+
+.f-PowerGrotesk {
+  font-family: "PowerGrotesk", sans-serif;
+}
+
+@font-face {
+  font-family: "HelveticaNeueBlack";
+  src: url("/fonts/HelveticaNeueBlack.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeueItalic";
+  src: url("/fonts/HelveticaNeueItalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "HelveticaNeueLight";
+  src: url("/fonts/HelveticaNeueLight.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeueLightItalic";
+  src: url("/fonts/HelveticaNeueLightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "HelveticaNeueMedium";
+  src: url("/fonts/HelveticaNeueMedium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeueMediumItalic";
+  src: url("/fonts/HelveticaNeueMediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "HelveticaNeueRoman";
+  src: url("/fonts/HelveticaNeueRoman.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeueUltraLight";
+  src: url("/fonts/HelveticaNeueUltraLight.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeueUltraLightItalic";
+  src: url("/fonts/HelveticaNeueUltraLightItalic.otf") format("opentype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PowerGrotesk";
+  src: url("/fonts/PowerGrotesk-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.left {
+  background-image: url("/images/businessBg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+input:focus-visible {
+    outline: none !important;
+}
+
+select:focus-visible {
+    outline: none !important;
 }
